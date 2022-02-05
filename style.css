@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+a, .our__package h5 {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.slider__section {
+    margin-top: 5rem;
+}
+
+.our__package h3 {
+    font-family: 'Manrope', sans-serif !important;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item .carousel-caption {
+    z-index: 2;
+}
+
+.our__package .card-body button, .our__package .card, .happy__clients .hover__shadow, .carousel-caption a {
+    transition: all 0.5s linear;
+}
+
+.our__package .card-body button:hover {
+    background-color: black;
+    border: none;
+}
+
+.our__package .card-body button:hover span {
+    color: white !important;
+}
+
+.hover__shadow:hover {
+    box-shadow: -5px -5px 10px -5px rgba(151, 151, 151, 0.75) !important;
+}
+
+.toast__segment {
+    border-left: 5px solid #3f87f5 !important;
+}
+
+.carousel-caption a:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.bonus__section {
+    height: 100vh;
+    width: 100%;
+    background-color: #234eff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bonus__section::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-image: url(images/bonus_section/Vector\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    z-index: -1;
+}
